@@ -45,6 +45,10 @@ h1,h2,h3,h4,h5,h5,h6{margin: 0}
 	margin: 0 auto;
 }
 
+img{
+	max-width: 100%;
+}
+
 .barra {
 	background-color: #000;
     padding: 1.6rem 0;
@@ -88,6 +92,7 @@ header{
 	background-image: url(../2449739-assets/bg-header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	height: 800px;
 	display: flex;
 	align-items: center;
@@ -128,6 +133,12 @@ button.btn{
 	position: absolute;
 	text-transform: uppercase;
 }
+
+button.btn:hover{
+	background-color: #06a1d3;
+	color: #fff;
+	transition: .3s ease-in-out;
+}
 /*Info*/
 .info{
 	background-color: #000;
@@ -136,15 +147,15 @@ button.btn{
 .info h2{
 	color: #06a1d3;
 	text-transform: uppercase;
-	padding-top: 7rem;
+	padding-top: 6.5rem;
 }
 .info p{
 	color: #06a1d3;
-	font-size: 15px;
+	font-size: 14px;
 	padding-top: 1rem;
 	line-height: 1.8;
 }
-@media (min-width: 800px){
+@media (min-width: 768px){
 	.info h2{
 	padding-top: 9rem;		
 	}
@@ -153,23 +164,6 @@ button.btn{
 	}
 }
 
-/*Valores - We*/
-.valores{
-	background-color: #141414;
-	padding: 6rem;
-}
-.caja,
-.caja-nombre{
-	line-height: 1.5;
-	width: 80%;
-}
-.caja h3{
-	text-transform: uppercase;
-	padding: .8rem 0;
-}
-.caja p{
-	font-size: 15px;
-}
 /*Equipo*/
 .equipo{
 	background-image: url(../2449739-assets/bg-priorities.jpg);
@@ -181,7 +175,7 @@ button.btn{
 .equipo .texto,
 .nosotros .texto{
 	color: #00c2f9;
-	padding: 3.8rem;
+	padding: 3.6rem;
 }
 
 .equipo .texto h3,
@@ -286,16 +280,16 @@ button.btn{
 }
 .seccion .texto-seccion{
 	color: #0098c5;
-	padding-top: 13rem;
+	padding-top: 9rem;
 }
 .seccion h3{
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 300;
 	text-transform: uppercase;
 	padding-bottom: .8rem;
 }
 .seccion p{
-	font-size: 16px;
+	font-size: 14px;
 	margin: auto;
 	line-height: 28px;
 	text-align: justify;
@@ -311,12 +305,17 @@ button.btn{
 .seccion img{
 	width: 100%;
 }
-@media(min-width: 1020px){
+@media(min-width: 768px){
 	 .seccion h3{
 	 	font-size: 42px;
 	 }
 	 .seccion p{
 		font-size: 18px;
+	}
+}
+@media(min-width: 768px){
+	.seccion .texto-seccion{
+		padding-top: 12rem;
 	}
 }
 /*Evento*/
@@ -352,6 +351,11 @@ button.btn{
 	margin-top: 1.5rem;
 	padding: 12px 50px;
 	text-transform: uppercase;	
+}
+.btn-evnt:hover{
+	background-color: #06a1d3;
+	color: #fff;
+	transition: .3s ease-in;
 }
 @media(min-width: 1130px){
 	.offset-9{
@@ -418,6 +422,19 @@ button.btn{
 	align-items: center;
 	justify-content: center;
 }
+
+.redes-sociales i:hover{
+	background-color: #06a1d3;
+	color: #fff;
+	transition: .2s ease-in;
+}
+
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
 @media(min-width: 1052px){
 	.redes-sociales ul li{
 		margin: 0 6px;
