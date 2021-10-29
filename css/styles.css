@@ -104,6 +104,7 @@ header{
 	flex-wrap: wrap;
 }
 .texto-header .parrafo{
+	font-size: 15px;
 	margin-top: 15rem;
 }
 .titulo-header{
@@ -113,7 +114,7 @@ header{
 }
 .titulo-header span{
     color: transparent;
-	font-size: 150px;
+	font-size: 100px;
 	text-transform: uppercase;
 	position: absolute;
 	-webkit-text-stroke: 3px white;
@@ -129,7 +130,7 @@ button.btn{
 	cursor: pointer;
 	font-weight: bold;
 	margin-top: 30rem;
-	padding: 12px 40px;
+	padding: 10px 30px;
 	position: absolute;
 	text-transform: uppercase;
 }
@@ -139,6 +140,26 @@ button.btn:hover{
 	color: #fff;
 	transition: .3s ease-in-out;
 }
+
+@media (min-width: 550px) {
+	.titulo-header span{
+		font-size: 150px;
+	}
+	button.btn{
+		padding: 12px 40px;
+	}
+}
+
+@media (min-width: 468px) {
+	.titulo-header span{
+		font-size: 125px;
+	}
+	.texto-header .parrafo{
+		font-size: 16px;
+	}
+}
+
+
 /*Info*/
 .info{
 	background-color: #000;
@@ -147,8 +168,15 @@ button.btn:hover{
 .info h2{
 	color: #06a1d3;
 	text-transform: uppercase;
-	padding-top: 6.5rem;
+	padding-top: 4.5rem;
 }
+
+@media (min-width: 468px) {
+	.info h2{
+	padding-top: 6.5rem;		
+	}
+}
+
 .info p{
 	color: #06a1d3;
 	font-size: 14px;
@@ -163,6 +191,7 @@ button.btn:hover{
 	font-size: 16px;
 	}
 }
+
 
 /*Equipo*/
 .equipo{
@@ -190,12 +219,14 @@ button.btn:hover{
 }
 .box{
 	background-color: rgba(39,39,39,.9);
-	height: 300px;
-	margin: 10px auto;
+	height: 280px;
+	margin: 8px auto;
+	width: 390px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 @media(min-width: 830px){
 	.equipo .texto{
 		padding: 6rem;
@@ -207,13 +238,17 @@ button.btn:hover{
 	.equipo .texto p,
 	.nosotros .texto p{
 	font-size: 18px;
+	}
 }
+
+@media (min-width: 600px) {
 	.box{
 		height: 350px;
 		margin: 0 18px;
 		flex: 1;
 	}
 }
+
 .caja-nombre h3{
 	font-size: 14px;
 	text-transform: uppercase;
@@ -264,14 +299,13 @@ button.btn:hover{
 .testimonio{
 	background-color: #141414;
 	color: #0098c5;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	padding: 6rem;
 }
 .texto-testimonio{
 	margin: auto;
 	max-width: 70%;
-	line-height: 1.5;
 	padding-bottom: 1rem;
 }
 /*Sección*/
@@ -283,23 +317,33 @@ button.btn:hover{
 	padding-top: 9rem;
 }
 .seccion h3{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 300;
 	text-transform: uppercase;
 	padding-bottom: .8rem;
 }
 .seccion p{
-	font-size: 14px;
+	font-size: 13px;
 	margin: auto;
 	line-height: 28px;
 	text-align: justify;
 	width: 61%;
 }
+
+@media(min-width: 468px){
+	.seccion h3{
+		font-size: 38px;
+	}
+	.seccion p{
+	   font-size: 17px;
+   }
+}
+
 .seccion .imagen{
 	background-image: url(../2449739-assets/bg-nature.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	height: 600px;
 }
 .seccion img{
@@ -335,21 +379,30 @@ button.btn:hover{
 	
 }
 .texto-evento h3{
-	font-size: 44px;
+	font-size: 34px;
 	text-transform: uppercase;
 }
+
+@media (min-width: 550px) {
+	.texto-evento h3{
+		font-size: 44px;
+	}
+}
+
 .texto-evento p{
+	font-size: 14px;
 	text-align: justify;
 }
+
 .btn-evnt{
 	background-color: #e1e1e1;
 	border: 0;
 	border-radius: 22px;
 	color: #06a1d3;
 	cursor: pointer;
-	font-size: 22px;
+	font-size: 18px;
 	margin-top: 1.5rem;
-	padding: 12px 50px;
+	padding: 10px 30px;
 	text-transform: uppercase;	
 }
 .btn-evnt:hover{
@@ -368,6 +421,15 @@ button.btn:hover{
 	}
 	.texto-evento h3{
 	font-size: 48px;
+	}
+}
+@media (min-width: 550px) {
+	.btn-evnt{
+		padding: 12px 50px;
+		font-size: 22px;
+	}
+	.texto-evento p{
+		font-size: 16px;
 	}
 }
 /*Fecha*/
@@ -415,12 +477,20 @@ button.btn:hover{
 	background-color: #fff;
 	border-radius: 50%;
 	color: #000;
-	font-size: 24px;
-	height: 40px;
-	width: 40px;
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.footer p{
+	font-size: 14px;
+}
+
+.footer .col-4 ul li{
+	font-size: 14px;
 }
 
 .redes-sociales i:hover{
@@ -440,6 +510,27 @@ button.btn:hover{
 		margin: 0 6px;
 	}
 }
+
+@media (min-width: 584px) {
+	.texto-testimonio{
+		line-height: 1.5;
+	}
+	.testimonio{
+		font-size: 18px;
+	}
+	.redes-sociales ul li a i{
+		font-size: 24px;
+		height: 40px;
+		width: 40px;
+	}
+	.footer p{
+		font-size: 16px;
+	}
+	.footer .col-4 ul li{
+		font-size: 16px;
+	}
+}
+
 hr{
 	background-color: #3ea2d8;
 	height: 20px;
